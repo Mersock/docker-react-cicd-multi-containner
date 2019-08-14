@@ -1,0 +1,10 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+        {
+            "name":"client",
+            "image": "mersock/simple-react-complex-client",
+            "hostname":"client"
+        }
+    ]
+}
