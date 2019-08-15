@@ -2,9 +2,22 @@
     "AWSEBDockerrunVersion": 2,
     "containerDefinitions": [
         {
-            "name":"client",
+            "name": "client",
             "image": "mersock/simple-react-complex-client",
-            "hostname":"client"
+            "hostname": "client",
+            "essential": false
+        },
+        {
+            "name": "server",
+            "image": "mersock/simple-react-complex-server",
+            "hostname": "api",
+            "essential": false
+        },
+        {
+            "name": "worker",
+            "image": "mersock/simple-react-complex-worker",
+            "hostname": "worker",
+            "essential": false
         }
     ]
 }
