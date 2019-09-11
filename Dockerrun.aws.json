@@ -6,21 +6,21 @@
             "image": "mersock/simple-react-complex-client",
             "hostname": "client",
             "essential": false,
-            "memory": 128
+            "memory": 256
         },
         {
             "name": "server",
             "image": "mersock/simple-react-complex-server",
             "hostname": "api",
             "essential": false,
-            "memory": 128
+            "memory": 256
         },
         {
             "name": "worker",
             "image": "mersock/simple-react-complex-worker",
             "hostname": "worker",
             "essential": false,
-            "memory": 128
+            "memory": 256
         },
         {
             "name": "nginx",
@@ -34,7 +34,7 @@
                 }
             ],
             "links": ["client","server"],
-            "memory": 128
+            "memory": 256
         }
     ]
 }
